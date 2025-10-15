@@ -37,7 +37,7 @@ CREATE TABLE tx_academicpersons_domain_model_contract (
     email_addresses int(11) unsigned DEFAULT '0' NOT NULL,
 
     publish smallint(5) unsigned DEFAULT '0' NOT NULL,
-    sorting int(11) unsigned DEFAULT '0' NOT NULL,
+    sorting int(11) unsigned DEFAULT '0' NOT NULL
 );
 
 CREATE TABLE tx_academicpersons_domain_model_email (
@@ -122,6 +122,7 @@ CREATE TABLE tx_academicpersons_domain_model_profile (
     publications int(11) unsigned DEFAULT '0' NOT NULL,
     scientific_research int(11) unsigned DEFAULT '0' NOT NULL,
     vita int(11) unsigned DEFAULT '0' NOT NULL,
+    allowed_show_public tinyint unsigned DEFAULT '0' NOT NULL
 );
 
 CREATE TABLE tx_academicpersons_contract_address_mm (
